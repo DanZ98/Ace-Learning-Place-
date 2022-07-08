@@ -1,0 +1,762 @@
+/********** Global settings **********/
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
+      sans-serif;
+    line-height: normal;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  
+  /********** Global Card Styles **********/
+  .container {
+    height: 14.9rem;
+    position: relative;
+    max-width: 88rem;
+    width: 88rem;
+    left: -3.7rem;
+    top: 3rem;
+  }
+  
+  .col {
+    min-height: 13vh;
+    padding: 0 1rem;
+    max-width: 14.1rem;
+  }
+  
+  /* Cards */
+  .card-container {
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    /* This has to be below the rest of display flex for firefox browser */
+    width: fit-content;
+    /* This has to be max-content for firefox browser */
+    width: max-content;
+    height: 13.5rem;
+  }
+  
+  .card {
+    width: 11.2rem;
+    height: 12.6rem;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    border-color: #d40029;
+    -webkit-transition: ease 0.4s;
+    -moz-transition: ease 0.4s;
+    -ms-transition: ease 0.4s;
+    -o-transition: ease 0.4s;
+    transition: ease 0.4s;
+    display: inline-block;
+  }
+  
+  .container-display {
+    display: none;
+  }
+  
+  .container-position {
+    position: absolute;
+    left: 9.5rem;
+  }
+  
+  .card-container > a {
+    text-decoration: none;
+  }
+  
+  .card:hover {
+    border: 1px solid #d40029;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 7px 3px #ccc;
+    -moz-box-shadow: 0px 0px 7px 3px #ccc;
+    -ms-box-shadow: 0px 0px 7px 3px #ccc;
+    box-shadow: 0px 0px 7px 3px #ccc;
+  }
+  
+  h5 {
+    color: #000;
+    font-size: 1.4rem;
+  }
+  
+  /* Nav */
+  nav {
+    display: none;
+  }
+  
+  nav ul {
+    padding: 0 2rem;
+    list-style: none;
+    text-align: left;
+  }
+  
+  nav.menu-dropdown ul.sub-menu-dropdown {
+    padding: 0.8rem 2.4rem 1rem 2.4rem;
+  }
+  
+  nav ul li {
+    padding: 0.2rem 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    pointer-events: initial;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+    color: #d40029;
+  }
+  
+  
+  .best-brands-ul {
+    display: flex;
+    width: 6rem;
+  }
+  
+  .best-brands-ul .ul-dropdown-container {
+    margin-right: 1rem;
+  }
+  
+  .ul-dropdown {
+    display: flex;
+    padding-right: 2rem;
+    /* height: 10.7rem; */
+    width: fit-content;
+    width: max-content;
+    
+  }
+  
+  .ul-dropdown-container li{
+    margin-right: 2rem;
+    /* padding: 0; */
+    /* width: fit-content; */
+    /* width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0; */
+  }
+  
+  .ul-dropdown-container li a  {
+    padding: 0;
+    width: fit-content;
+  }
+  
+  .best-brands-ul .ul-dropdown-container li {
+    margin-right: 0;
+  }
+  
+  
+  .learningresources-container__nav .ul-dropdown-container:nth-child(2),
+  .learningresources-container__nav .ul-dropdown-container:nth-child(3) li a,
+  .whats-container__nav .ul-dropdown-container li a,
+  .ondemandcourses-container__nav li a,
+  .instructor-container__nav li a,
+  .myreports__nav ul li {
+    line-height: 2.2rem;
+  }
+  
+  /* Arrow */
+  .arrow-up {
+    display: none;
+  }
+  
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid gray;
+  }
+  
+  .arrow-right {
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #8b8b8b;
+  }
+  
+  .anchor-display-initial {
+    border: initial;
+  }
+  
+  .anchor-display-inline {
+    display: inline-block;
+  }
+  
+  .arrow-right:hover {
+    cursor: pointer;
+  }
+  
+  .arrow-right-rotate {
+    transform: rotate(90deg);
+  }
+  
+  .sub-menu-dropdown-hide {
+    display: none;
+  }
+  
+  .anchor-display-none {
+    display: none;
+  }
+  
+  .link-color-change {
+    color: #d40029;
+  }
+  
+  /* Add CSS smooth transition for nav menus part2 */
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /********** Back Button **********/
+  .chevron-container {
+    display: none;
+  }
+  
+  .chevron-container__sub {
+    display: flex;
+    position: relative;
+    bottom: 6.3rem;
+    left: 10.1rem;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .chevron-container__copy {
+    margin: 0 0 0 1.5rem;
+  }
+  
+  .chevron-transition {
+    animation: chevron 2s ease;
+  }
+  
+  @keyframes chevron {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .chevron-transition1 {
+    animation: chevron 0s ease;
+    opacity: 0;
+  }
+  
+  @keyframes chevron {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .chevron-back-btn {
+    position: relative !important;
+    left: 0 !important;
+    display: inline-block;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
+      sans-serif;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    width: 7rem;
+    font-size: 1.4rem;
+    background-color: #d40029;
+    font-weight: 400;
+    border: none;
+  }
+  
+  .chevron-back-btn:hover {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .chevron {
+    margin: 3rem 0 0 4rem;
+    position: absolute;
+    left: -1.5rem;
+  }
+  
+  .whats-container__nav,
+  .ondemandcourses-container__nav {
+    margin-top: 1rem;
+  }
+  
+  .chevron-display {
+    display: block;
+  }
+  
+  .chevron-none {
+    display: none;
+  }
+  
+  
+  
+  /********** Learning Resources & Help Styles **********/
+  .learning {
+    position: absolute;
+    right: 86.8%;
+    left: 4.5%;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    display: block;
+  }
+  
+  .learningresources-container__icon {
+    margin-top: 1rem;
+    width: 5.3rem;
+    height: auto;
+  }
+  
+  .learningresources-container__nav {
+    margin-top: 2rem;
+  }
+  
+  .learningresources-container__nav .ul-dropdown, .ondemandcourses-container__nav .ul-dropdown {
+    margin-left: 2.2rem;
+  }
+  
+  
+  .learningresources-container__quickaccess {
+    margin-right: .3rem;
+    border: 1px solid #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 17rem;
+    height: 11rem;
+  }
+  
+  .learningresources-container__quickaccess::before,
+  .myreports-container__access::before {
+    content: "QUICK ACCESS";
+    font-size: 1.2rem;
+    line-height: normal;
+    color: #000;
+    font-family: "Roboto";
+    position: relative;
+    bottom: 1.3rem;
+    background-color: #fff;
+    padding: 0 1rem;
+  }
+  
+  .learningresources-container__quickaccess li {
+    padding-right: 0 !important;
+  }
+  
+  .learningresources-container__list {
+    margin-bottom: 1.2rem;
+    margin-right: 0 !important;
+    position: relative;
+    bottom: 5px;
+  }
+  
+  .learningresources-container__button {
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    background-color: #34c759;
+    border: 1px solid #34c759;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  
+  .learningresources-container__list:nth-child(2)
+    .learningresources-container__button {
+    padding: 0.5rem 2.7rem;
+  }
+  
+  .learningresources-container__assessment {
+    width: max-content;
+  }
+  
+  .learning-resources-slide {
+    transform: translate(-1.5rem, -1.4rem);
+    transition: ease all 1s;
+  }
+  
+  .learning-resources-slide-2 {
+    transform: translate(-1.5rem, -2rem);
+    transition: ease all 1s;
+  }
+  
+  .learning-resources-slide-3 {
+    transform: translate(-1.5rem, -2.4rem);
+    transition: ease all 1s;
+  }
+  
+  .learningresources-container__nav {
+    position: absolute;
+    right: 0;
+    left: 9.5rem;
+  }
+  
+  /********** Whats New This Month **********/
+  .whatsnew-container h5 {
+    position: relative;
+    bottom: 0.6rem;
+  }
+  
+  .whatsnew {
+    position: absolute;
+    /* right: 86.8%; */
+    left: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+  
+  .whats-container__nav .ul-dropdown {
+    position: relative;
+    right: 0;
+    left: 20.8rem;
+  }
+  
+  .whats-container__nav {
+    position: absolute;
+    right: 0;
+  }
+  
+  /********** On Demand Courses **********/
+  .ondemandcourses-container h5 {
+    position: relative;
+    top: 0.6rem;
+  }
+  
+  .on-demand-courses {
+    position: absolute;
+    /* right: 86.8%; */
+    left: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+  
+  #best-brands-padding li {
+    margin-right: 0.3rem;
+  }
+  
+  .best-brands-logo {
+    border-radius: 50px;
+    transition: all 1s ease;
+    border: 1px solid #fff;
+    transition: 0.7s;
+    width: 6.3rem;
+    height: auto;
+  }
+  
+  .best-brands-logo:hover {
+    border: 1px solid #d40029;
+    transform: scale(1.05);
+  }
+  
+  .ondemandcourses-container__nav .menu {
+    position: relative;
+    left: -19px;
+  }
+  
+  .ul-dropdown-bestbrands li {
+    padding-right: 0.5rem;
+  }
+  
+  .bestbrands-slide1 {
+    transform: translate(0.5rem, -1rem);
+    transition: ease all 1s;
+  }
+  
+  .mobileapplication-slide {
+    transform: translate(-14rem, -0.5rem);
+    transition: ease all 1s;
+  }
+  
+  .storesystem-slide {
+    transform: translate(-14rem, -1.5rem);
+    transition: ease all 1s;
+  }
+  
+  .live-product {
+    font-weight: 600;
+    text-decoration: underline;
+    pointer-events: none;
+  }
+  
+  .training-slide {
+    transform: translate(-5.5rem, -0.5rem);
+    transition: ease all 1s;
+  }
+  
+  .ondemandcourses-container__nav {
+    position: absolute;
+    right: 0;
+    left: -15.5rem;
+  }
+  
+  /********** Instructor Led Training **********/
+  .instructor-container h5 {
+    position: relative;
+    top: 0.5rem;
+  }
+  
+  .instructor {
+    position: absolute;
+    /* right: 86.8%; */
+    left: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+  
+  .instructor-container__nav .ul-dropdown {
+    margin-top: 1rem;
+  }
+  
+  .instructor-container__nav li:first-child a {
+    color: #000;
+    font-weight: 600;
+    pointer-events: none;
+    font-size: 1.4rem;
+  }
+  
+  .instructor-container__nav li:nth-child(2) {
+    border-top: 1px solid #000;
+  }
+  
+  .info-webinars-btn {
+    border: 1px solid #d40029;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #d40029;
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+  
+  .instructor-container__nav .ul-dropdown {
+    position: relative;
+    right: 0;
+    left: 58.2rem;
+  }
+  
+  .instructor-container__nav {
+    position: absolute;
+    right: 0;
+  }
+  
+  /********** Training by Department **********/
+  .training-slide2 {
+    transform: translate(-21.5rem, -0.5rem);
+    transition: ease all 1s;
+  }
+  
+  .trainingdepartment {
+    position: absolute;
+    /* right: 86.8%; */
+    left: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+  
+  .training-container__nav {
+    position: absolute;
+    right: 0;
+  }
+  
+  .training-container__nav .ul-dropdown {
+    position: relative;
+    top: 1rem;
+    right: 0;
+    left: 32.7rem;
+  }
+  
+  /********** My Reports **********/
+  .myreports-container h5 {
+    position: relative;
+    top: 0.5rem;
+  }
+  
+  .myreports {
+    position: absolute;
+    /* right: 87.8%;  */
+    left: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+  
+  .myreports-container__access {
+    margin-right: 1.9rem;
+    border: 1px solid #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 17rem;
+    height: 7rem;
+  }
+  
+  .myreports__nav .ul-dropdown {
+    position: relative;
+    top: 2.1rem;
+    right: 0;
+    left: 22.2rem;
+  }
+  
+  .myreports__nav {
+    position: absolute;
+    right: 0;
+  }
+  
+  /********** Training Coordinator Shortcuts **********/
+  .trainingshortcuts {
+    position: absolute;
+    right: 86.8%;
+    left: 91.5%;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+  
+  .trainingshortcuts-container .card {
+    background-color: #d40029;
+  }
+  
+  .trainingshortcuts-container .card:hover {
+    border: 2px solid #000;
+  }
+  
+  .trainingshortcuts-container .card-body h5 {
+    color: #fff;
+  }
+  
+  .card-transition-reverse {
+    position: absolute;
+    right: 100%;
+    left: 12%;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+  
+  .pointer-events {
+    pointer-events: none;
+  }
+  
+  /********** IE Support **********/
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .card-container {
+      position: absolute;
+    }
+  
+    /* Learning Resources & Help Links */
+    .learningresources-container__nav {
+      width: 700px;
+      position: absolute;
+      left: 9.5rem;
+    }
+  
+    .learningresources-container__nav .ul-dropdown .ul-dropdown-container {
+      width: 231px;
+      float: left;
+    }
+  
+    .learningresources-container__nav
+      .ul-dropdown
+      .learningresources-container__quickaccess {
+      width: 180px;
+    }
+  
+    .learningresources-container__assessment .ul-dropdown {
+      width: 300px;
+    }
+  
+    .learningresources-container__assessment .ul-dropdown .ul-dropdown-container {
+      width: 300px;
+    }
+  
+    /* What's New Links */
+    .whats-container__nav {
+      width: 300px;
+      position: absolute;
+      left: -23.5rem;
+    }
+  
+    /* Instructor Led Links*/
+    .instructor-container__nav .ul-dropdown {
+      position: relative;
+      left: 58.3rem;
+    }
+  
+    /* On Demand Courses Links */
+    .ondemandcourses-container__nav {
+      width: 800px;
+    }
+  
+    .info-webinars-btn {
+      width: 180px;
+    }
+  
+    /* Training Shortcuts */
+    .trainingshortcuts {
+      left: 0.5%;
+    }
+  
+    .pointer-events {
+      pointer-events: initial;
+    }
+  }

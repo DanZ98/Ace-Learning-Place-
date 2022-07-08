@@ -1,0 +1,722 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Cache-Control" content="no-cache" /> 
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        
+        <!-- google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
+
+        <!-- Jquery CDN Link -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Styles -->
+        <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+
+        <title>Ace Learning</title>
+
+    </head>
+    <body>
+
+        <div class="container my-3" id="associates">
+            <div class="row text-center align-items-top justify-content-center" id="row-height">
+
+                <!-- Learning Resources & Help -->
+                <div class="col">
+
+                    <!-- Chevron btn -->
+                    <div class="chevron-container chevron-transition chevron" id="learningresources-chevron-btn">
+                        <div class="chevron-container__sub">
+                            <nav class="menu menu-back-btn">
+                                <ul>
+                                <li style="list-style: none;"><a class="sub-menu-click chevron-back-btn chevron-menupage-learning"><i class="far fa-chevron-left"></i>&nbsp;&nbsp;&nbsp;Back</a></li>
+                                </ul>
+                            </nav>
+                            <p style="margin: 0 0 12px 0;" class="chevron-container__copy">Learning Resources & Help</p>
+                        </div> 
+                    </div>
+                    <!-- End Chevron btn -->
+
+                    <div class="card-container learningresources-container">
+                        <div class="card-sub-container learning">
+                            <div class="card mx-auto">
+                                <img class="learningresources-container__icon" src="https://na9p1.sabacloud.com/production/NA9P1PRD003/sabacr72229736905366323/ALP%20Images%20V2/learning-resources.png" alt="Learning Resources" />
+                                <div class="card-body card-body-margin">
+                                    <h5 class="card-title">Learning Resources <br /> & Help</h5>
+                                </div>
+                            </div>
+                            <nav class="learningresources-container__nav">
+                                <ul class="ul-dropdown">
+                                    <div class="ul-dropdown-container learningresources-container__quickaccess anchors-assessment">
+                                        <li class="learningresources-container__list">
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/me/plans" class="anchors-assessment learningresources-container__item" target="_blank"><button type="button" class="learningresources-container__button">Open My Plan</button></a>
+                                        </li>
+                                        <li class="learningresources-container__list" id="wo">
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/team/overview" class="anchors-assessment learningresources-container__item" target="_blank"><button type="button" class="learningresources-container__button">My Team's Plan</button></a>
+                                        </li>
+                                    </div>
+                                    <div class="ul-dropdown-container">
+                                        <nav class="menu">
+                                            <ul>
+                                                <li class="pointer-events">
+                                                    <a href="https://awor.educegroup.com/#/redirector/awor/" class="anchors-assessment anchors-submenu-display no-collapsable" target="_blank">Ace Way of Retailing</a>
+                                                </li>
+                                                <li class="sub-nav-transition-assessment pointer-events"><a onclick="learningResourcesAssessmentClick()" class="arrow-right learningresources-container__assessment-anchors"></a><a onclick="learningResourcesAssessmentClick()" class="sub-menu-click learningresources-container__assessment-anchors" id="assessment-colorchange" href='#'>Assessments</a>
+                                                    <div>
+                                                        <ul class="assessment">
+                                                            <div class="ul-dropdown-container">
+                                                                <li>
+                                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085851" class="learningresources-container__assessment-anchors no-collapsable" target="_blank">All Role Assessments</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085790" class="learningresources-container__assessment-anchors no-collapsable" target="_blank">Associate Assessments</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085810" class="learningresources-container__assessment-anchors no-collapsable" target="_blank">Manager/Owner Assessments</a>
+                                                                </li>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="sub-nav-transition-assessment pointer-events"><a onclick="learningResourcesHelpClick()" class="arrow-right learningresources-container__help-anchors"></a><a onclick="learningResourcesHelpClick()" class="sub-menu-click learningresources-container__help-anchors" id="help-colorchange" href='#'>Help</a>
+                                                    <ul class="assessment">
+                                                        <div class="ul-dropdown-container">
+                                                        <li>
+                                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085838" class="learningresources-container__help-anchors no-collapsable" target="_blank">ALP "How To" Learning Aids</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085840" class="learningresources-container__help-anchors no-collapsable" target="_blank">Browser and System Requirements</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085841" class="learningresources-container__help-anchors no-collapsable" target="_blank">Contact us</a>
+                                                        </li>
+                                                        </div>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-nav-transition-assessment pointer-events"> <a onclick="learningResourcesLearningPlanClick()" class="arrow-right learningresources-container__learningplan-anchors"></a><a onclick="learningResourcesLearningPlanClick()" class="sub-menu-click learningresources-container__learningplan-anchors" id="learningplan-colorchange" href='#'>Learning Plan Resources</a>
+                                                    <ul class="assessment">
+                                                        <div class="ul-dropdown-container">
+                                                        <li>
+                                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085792" class="learningresources-container__learningplan-anchors no-collapsable" target="_blank">Associate Role Resources</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085811" class="learningresources-container__learningplan-anchors no-collapsable" target="_blank">Manager/Owner Role Resources</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085852" class="learningresources-container__learningplan-anchors no-collapsable" target="_blank">Resources to Coach Your Team</a>
+                                                        </li>
+                                                        </div>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="ul-dropdown-container">
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085822" class="anchors-assessment anchors-submenu-display" target="_blank">On Demand Course List</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085814" class="anchors-assessment anchors-submenu-display" target="_blank">People First Planner</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://mydigimag.rrd.com/publication/?i=694348&p=&pn=" class="anchors-assessment anchors-submenu-display" target="_blank">Retail Training Catalog</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085854" class="anchors-assessment anchors-submenu-display" target="_blank">Skills Matrix</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- End My Learning Resources & Plan-->
+
+                <!-- Whats New -->
+                <div class="col">
+
+                    <!-- Chevron btn -->
+                    <div class="chevron-container chevron-transition chevron" id="whatsnew-chevron-btn">
+                        <div class="chevron-container__sub">
+                        <button class="chevron-back-btn chevron-menupage-whatsnew"><i class="far fa-chevron-left"></i>&nbsp;&nbsp;&nbsp;Back</button>
+                        
+                        <p class="chevron-container__copy">What's New This Month</p>
+                        </div> 
+                    </div>
+                    <!-- End Chevron btn -->
+
+                    <div class="card-container whatsnew-container">
+                        <div class="card-sub-container whatsnew">
+                            <div class="card mx-auto">
+                                <svg class="card-img-top mx-auto mt-3" xmlns="http://www.w3.org/2000/svg" width="60.438" height="52.436" viewBox="0 0 80.438 72.436"><path d="M61.842,6a3.961,3.961,0,0,0-3.783,2.919L7.484,24.092a3.923,3.923,0,0,0-3.536-2.3A3.968,3.968,0,0,0,0,25.737v7.895a3.968,3.968,0,0,0,3.947,3.947,3.956,3.956,0,0,0,3.536-2.22l10.485,3.66-1.028,2.714v.041a5.868,5.868,0,0,0,3.7,7.4l5.469,1.85a5.868,5.868,0,0,0,7.4-3.7l.863-2.59,23.684,8.306a3.925,3.925,0,0,0,7.73-.987V9.947A3.968,3.968,0,0,0,61.842,6Zm0,2.632a1.3,1.3,0,0,1,1.316,1.316V52.053a1.316,1.316,0,0,1-2.632.041V9.824A1.3,1.3,0,0,1,61.842,8.632Zm-3.947,3.084V50.2l-50-17.516V26.724ZM3.947,24.421a1.3,1.3,0,0,1,1.316,1.192.988.988,0,0,1,0,.123v8.018a1.319,1.319,0,0,1-2.632-.123V25.737A1.3,1.3,0,0,1,3.947,24.421ZM20.436,39.882,31.867,43.87,31,46.461a3.2,3.2,0,0,1-4.071,2.056l-5.469-1.809a3.225,3.225,0,0,1-2.015-4.071c.005-.015-.005-.026,0-.041Z" transform="matrix(0.914, -0.407, 0.407, 0.914, -2.44, 21.278)" fill="#d40029"></path></svg>
+                                <div class="card-body card-body-margin">
+                                    <h5 class="card-title">What's New This Month</h5>
+                                </div>
+                            </div>
+                            <nav class="whats-container__nav">
+                                <ul class="ul-dropdown">
+                                    <div class="ul-dropdown-container">
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085813" class="anchors-submenu-display" target="_blank">News</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085814" class="anchors-submenu-display" target="_blank">People First Planner</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085816" class="anchors-submenu-display" target="_blank">This Month's New Courses</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085817" class="anchors-submenu-display" target="_blank">Win the Month</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Whats New -->
+
+                <!-- On Demand Courses -->
+                <div class="col">
+
+                    <!-- Chevron btn -->
+                    <div class="chevron-container chevron-transition chevron" id="ondemandcourses-chevron-btn">
+                        <div class="chevron-container__sub">
+                            <nav class="menu menu-back-btn">
+                            <ul>
+                                <li style="list-style: none;"><a class="sub-menu-click chevron-back-btn chevron-menupage-demand"><i class="far fa-chevron-left"></i>&nbsp;&nbsp;&nbsp;Back</a></li>
+                            </ul>
+                            </nav>
+                            <p style="margin: 0 0 12px 0;" class="chevron-container__copy">On Demand Courses</p>
+                        </div> 
+                    </div>
+                    <!-- End Chevron btn -->
+
+                    <div class="card-container ondemandcourses-container">
+                        <div class="card-sub-container on-demand-courses">
+                            <div class="card mx-auto">
+                                <svg class="card-img-top mx-auto mt-3" xmlns="http://www.w3.org/2000/svg" width="40.113" height="40.113" viewBox="0 0 55.113 55.113"><path d="M29.556,2A27.556,27.556,0,1,0,57.113,29.556,27.573,27.573,0,0,0,29.556,2Zm0,2.4A25.16,25.16,0,1,1,4.4,29.556,25.143,25.143,0,0,1,29.556,4.4ZM21.17,15.479V43.634l1.8-1.048L43.334,30.6l1.76-1.048-1.76-1.048L22.967,16.527Zm2.4,4.193,16.773,9.884L23.566,39.441Z" transform="translate(-2 -2)" fill="#d40029"/></svg>
+                                <div class="card-body card-body-margin">
+                                <h5 class="card-title">On Demand Courses</h5>
+                                </div>
+                            </div>
+                            <nav class="ondemandcourses-container__nav">
+                                <ul class="ul-dropdown">
+                                    <div class="ul-dropdown-container">
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085794" class="anchors-assessment anchors-ondemand anchors-submenu-display" target="_blank">Badge Program</a>
+                                        </li>
+                                        <nav class="menu">
+                                            <ul>
+                                                <li class="sub-nav-transition-assessment pointer-events"><a onclick="onDemandCoursesBestBrandsClick()" class="arrow-right best-brands"></a><a onclick="onDemandCoursesBestBrandsClick()" class="sub-menu-click best-brands" id="bestbrands-colorchange" href='#'>Best Brands</a>
+                                                    <ul class="best-brands-ul">
+                                                        <div class="ul-dropdown-container">
+                                                            <li>
+                                                                <a class="no-collapsable" href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=common%2Fcategorydetail%2Fcateg000000000005074%2Fxxemptyxx%2Fxxemptyxx%2FALL%3Fst$search-result-custom-fields-filter$*MP*%3D*OPCRL**CLCRL*&st$search-result-facet-filters$*MP*%3D*OPCRL**CLCRL*&st$learningBrowse$*BL*%3Dfalse&st$showBackLinkOnBrowse$*BL*%3Dfalse&st$search-result-facet-condition-types$*MP*%3D*OPCRL*resource_type$*ST**EQ*kAnd,%20all_category_id$*ST**EQ*kOr,%20microlearning$*ST**EQ*kOr*CLCRL*&st$KC-searchType$*ST*%3DALL&st$fromCareerSite$*BL*%3Dfalse&st$saba-datatable-add-facets-values$*BL*%3Dtrue&st$start-date-adv-search-filter-state$*MP*%3D*OPCRL**CLCRL*&st$facet-resource-type-state$*ST*%3DALL&st$fromBrowseSearch$*BL*%3Dtrue&st$saba-datatable-page-number$*ST*%3D0&st$index-count-state$java.lang.Integer%3D20&st$categoryId$*ST*%3Dcateg000000000005074&st$fromEcommerce$*BL*%3Dfalse&st$isBrowseContext$*BL*%3Dtrue&st$gridViewState$*BL*%3Dtrue&st$dataListName$*ST*%3DCommonCategorySearchList&st$saba-datatable-block-number$*ST*%3D0&st$showBackLinkOnSearch$*BL*%3Dfalse&st$search-result-facet-condition-operator$*MP*%3D*OPCRL*all_category_id$*FO**EQ*kEqual,%20resource_type$*FO**EQ*kEqual,%20owner$*FO**EQ*kEqual,%20microlearning$*FO**EQ*kEqual,%20facet_tag_name$*FO**EQ*kEqual*CLCRL*&st$saba-datatable-multiple-data-blocks$*BL*%3Dfalse" target="_blank"><img class="best-brands-logo" src="https://na3t1.sabacloud.com/production/NA3T1SNB007/sabacr3013639809518732804/img/ben-moore.png" alt="Benjamin Moore" width="65" height="auto"></a>
+                                                            </li>
+                                                        </div>
+                                                        <div class="ul-dropdown-container">
+                                                            <li>
+                                                                <a class="no-collapsable" href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085821" target="_blank"><img class="best-brands-logo" src="https://na3t1.sabacloud.com/production/NA3T1SNB007/sabacr3013639809518732804/img/stihl.png" alt="Stihl" width="65" height="auto"></a>
+                                                            </li>
+                                                        </div>
+                                                        <div class="ul-dropdown-container">
+                                                            <li>
+                                                                <a class="no-collapsable" href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=common%2Fcategorydetail%2Fcateg000000000005062%2Fxxemptyxx%2Fxxemptyxx%2FALL%3Fst$search-result-custom-fields-filter$*MP*%3D*OPCRL**CLCRL*&st$search-result-facet-filters$*MP*%3D*OPCRL**CLCRL*&st$learningBrowse$*BL*%3Dfalse&st$showBackLinkOnBrowse$*BL*%3Dfalse&st$search-result-facet-condition-types$*MP*%3D*OPCRL*resource_type$*ST**EQ*kAnd,%20all_category_id$*ST**EQ*kOr,%20microlearning$*ST**EQ*kOr*CLCRL*&st$KC-searchType$*ST*%3DALL&st$fromCareerSite$*BL*%3Dfalse&st$saba-datatable-add-facets-values$*BL*%3Dtrue&st$start-date-adv-search-filter-state$*MP*%3D*OPCRL**CLCRL*&st$facet-resource-type-state$*ST*%3DALL&st$fromBrowseSearch$*BL*%3Dtrue&st$saba-datatable-page-number$*ST*%3D0&st$index-count-state$java.lang.Integer%3D4&st$categoryId$*ST*%3Dcateg000000000005062&st$fromEcommerce$*BL*%3Dfalse&st$isBrowseContext$*BL*%3Dtrue&st$gridViewState$*BL*%3Dtrue&st$dataListName$*ST*%3DCommonCategorySearchList&st$saba-datatable-block-number$*ST*%3D0&st$showBackLinkOnSearch$*BL*%3Dfalse&st$search-result-facet-condition-operator$*MP*%3D*OPCRL*all_category_id$*FO**EQ*kEqual,%20resource_type$*FO**EQ*kEqual,%20owner$*FO**EQ*kEqual,%20microlearning$*FO**EQ*kEqual,%20facet_tag_name$*FO**EQ*kEqual*CLCRL*&st$saba-datatable-multiple-data-blocks$*BL*%3Dfalse" target="_blank"><img class="best-brands-logo" src="https://na3t1.sabacloud.com/production/NA3T1SNB007/sabacr3013639809518732804/img/big-green-egg.png" alt="Big Green Egg" width="65" height="auto"></a>
+                                                            </li>
+                                                        </div>
+                                                        <div class="ul-dropdown-container">
+                                                            <li>
+                                                                <a class="no-collapsable" href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=common%2Fcategorydetail%2Fcateg000000000005071%2Fxxemptyxx%2Fxxemptyxx%2FALL%3Fst$search-result-custom-fields-filter$*MP*%3D*OPCRL**CLCRL*&st$search-result-facet-filters$*MP*%3D*OPCRL**CLCRL*&st$learningBrowse$*BL*%3Dfalse&st$showBackLinkOnBrowse$*BL*%3Dfalse&st$search-result-facet-condition-types$*MP*%3D*OPCRL*resource_type$*ST**EQ*kAnd,%20all_category_id$*ST**EQ*kOr,%20microlearning$*ST**EQ*kOr*CLCRL*&st$KC-searchType$*ST*%3DALL&st$fromCareerSite$*BL*%3Dfalse&st$saba-datatable-add-facets-values$*BL*%3Dtrue&st$start-date-adv-search-filter-state$*MP*%3D*OPCRL**CLCRL*&st$facet-resource-type-state$*ST*%3DALL&st$fromBrowseSearch$*BL*%3Dtrue&st$saba-datatable-page-number$*ST*%3D0&st$index-count-state$java.lang.Integer%3D3&st$categoryId$*ST*%3Dcateg000000000005071&st$fromEcommerce$*BL*%3Dfalse&st$isBrowseContext$*BL*%3Dtrue&st$gridViewState$*BL*%3Dtrue&st$dataListName$*ST*%3DCommonCategorySearchList&st$saba-datatable-block-number$*ST*%3D0&st$showBackLinkOnSearch$*BL*%3Dfalse&st$search-result-facet-condition-operator$*MP*%3D*OPCRL*all_category_id$*FO**EQ*kEqual,%20resource_type$*FO**EQ*kEqual,%20owner$*FO**EQ*kEqual,%20microlearning$*FO**EQ*kEqual,%20facet_tag_name$*FO**EQ*kEqual*CLCRL*&st$saba-datatable-multiple-data-blocks$*BL*%3Dfalse" target="_blank"><img class="best-brands-logo" src="https://na3t1.sabacloud.com/production/NA3T1SNB007/sabacr3013639809518732804/img/toro.png" alt="Toro" width="65" height="auto"></a>
+                                                            </li>
+                                                        </div>
+                                                        <div class="ul-dropdown-container">
+                                                            <li>
+                                                                <a class="no-collapsable" href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=common%2Fcategorydetail%2Fcateg000000000005075%2Fxxemptyxx%2Fxxemptyxx%2FALL%3Fst$search-result-custom-fields-filter$*MP*%3D*OPCRL**CLCRL*&st$search-result-facet-filters$*MP*%3D*OPCRL**CLCRL*&st$learningBrowse$*BL*%3Dfalse&st$showBackLinkOnBrowse$*BL*%3Dfalse&st$search-result-facet-condition-types$*MP*%3D*OPCRL*resource_type$*ST**EQ*kAnd,%20all_category_id$*ST**EQ*kOr,%20microlearning$*ST**EQ*kOr*CLCRL*&st$KC-searchType$*ST*%3DALL&st$fromCareerSite$*BL*%3Dfalse&st$saba-datatable-add-facets-values$*BL*%3Dtrue&st$start-date-adv-search-filter-state$*MP*%3D*OPCRL**CLCRL*&st$facet-resource-type-state$*ST*%3DALL&st$fromBrowseSearch$*BL*%3Dtrue&st$saba-datatable-page-number$*ST*%3D0&st$index-count-state$java.lang.Integer%3D3&st$categoryId$*ST*%3Dcateg000000000005075&st$fromEcommerce$*BL*%3Dfalse&st$isBrowseContext$*BL*%3Dtrue&st$gridViewState$*BL*%3Dtrue&st$dataListName$*ST*%3DCommonCategorySearchList&st$saba-datatable-block-number$*ST*%3D0&st$showBackLinkOnSearch$*BL*%3Dfalse&st$search-result-facet-condition-operator$*MP*%3D*OPCRL*all_category_id$*FO**EQ*kEqual,%20resource_type$*FO**EQ*kEqual,%20owner$*FO**EQ*kEqual,%20microlearning$*FO**EQ*kEqual,%20facet_tag_name$*FO**EQ*kEqual*CLCRL*&st$saba-datatable-multiple-data-blocks$*BL*%3Dfalse" target="_blank"><img class="best-brands-logo" src="https://na3t1.sabacloud.com/production/NA3T1SNB007/sabacr3013639809518732804/img/craftsman.png" alt="Craftsman" width="65" height="auto"></a>
+                                                            </li>
+                                                        </div>
+                                                        <div class="ul-dropdown-container">
+                                                            <li>
+                                                                <a class="no-collapsable" href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=common%2Fcategorydetail%2Fcateg000000000005060%2Fxxemptyxx%2Fxxemptyxx%2FALL%3Fst$search-result-custom-fields-filter$*MP*%3D*OPCRL**CLCRL*&st$search-result-facet-filters$*MP*%3D*OPCRL**CLCRL*&st$learningBrowse$*BL*%3Dfalse&st$showBackLinkOnBrowse$*BL*%3Dfalse&st$search-result-facet-condition-types$*MP*%3D*OPCRL*resource_type$*ST**EQ*kAnd,%20all_category_id$*ST**EQ*kOr,%20microlearning$*ST**EQ*kOr*CLCRL*&st$KC-searchType$*ST*%3DALL&st$fromCareerSite$*BL*%3Dfalse&st$saba-datatable-add-facets-values$*BL*%3Dtrue&st$start-date-adv-search-filter-state$*MP*%3D*OPCRL**CLCRL*&st$facet-resource-type-state$*ST*%3DALL&st$fromBrowseSearch$*BL*%3Dtrue&st$saba-datatable-page-number$*ST*%3D0&st$index-count-state$java.lang.Integer%3D14&st$categoryId$*ST*%3Dcateg000000000005060&st$fromEcommerce$*BL*%3Dfalse&st$isBrowseContext$*BL*%3Dtrue&st$gridViewState$*BL*%3Dtrue&st$dataListName$*ST*%3DCommonCategorySearchList&st$saba-datatable-block-number$*ST*%3D0&st$showBackLinkOnSearch$*BL*%3Dfalse&st$search-result-facet-condition-operator$*MP*%3D*OPCRL*all_category_id$*FO**EQ*kEqual,%20resource_type$*FO**EQ*kEqual,%20owner$*FO**EQ*kEqual,%20microlearning$*FO**EQ*kEqual,%20facet_tag_name$*FO**EQ*kEqual*CLCRL*&st$saba-datatable-multiple-data-blocks$*BL*%3Dfalse" target="_blank"><img class="best-brands-logo" src="https://na3t1.sabacloud.com/production/NA3T1SNB007/sabacr3013639809518732804/img/traeger.png" alt="Traeger" width="65" height="auto"></a>
+                                                            </li>
+                                                        </div>
+                                                        <div class="ul-dropdown-container">
+                                                            <li>
+                                                                <a class="no-collapsable" href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=common%2Fcategorydetail%2Fcateg000000000005073%2Fxxemptyxx%2Fxxemptyxx%2FALL%3Fst$search-result-custom-fields-filter$*MP*%3D*OPCRL**CLCRL*&st$search-result-facet-filters$*MP*%3D*OPCRL**CLCRL*&st$learningBrowse$*BL*%3Dfalse&st$showBackLinkOnBrowse$*BL*%3Dfalse&st$search-result-facet-condition-types$*MP*%3D*OPCRL*resource_type$*ST**EQ*kAnd,%20all_category_id$*ST**EQ*kOr,%20microlearning$*ST**EQ*kOr*CLCRL*&st$KC-searchType$*ST*%3DALL&st$fromCareerSite$*BL*%3Dfalse&st$saba-datatable-add-facets-values$*BL*%3Dtrue&st$start-date-adv-search-filter-state$*MP*%3D*OPCRL**CLCRL*&st$facet-resource-type-state$*ST*%3DALL&st$fromBrowseSearch$*BL*%3Dtrue&st$saba-datatable-page-number$*ST*%3D0&st$index-count-state$java.lang.Integer%3D10&st$categoryId$*ST*%3Dcateg000000000005073&st$fromEcommerce$*BL*%3Dfalse&st$isBrowseContext$*BL*%3Dtrue&st$gridViewState$*BL*%3Dtrue&st$dataListName$*ST*%3DCommonCategorySearchList&st$saba-datatable-block-number$*ST*%3D0&st$showBackLinkOnSearch$*BL*%3Dfalse&st$search-result-facet-condition-operator$*MP*%3D*OPCRL*all_category_id$*FO**EQ*kEqual,%20resource_type$*FO**EQ*kEqual,%20owner$*FO**EQ*kEqual,%20microlearning$*FO**EQ*kEqual,%20facet_tag_name$*FO**EQ*kEqual*CLCRL*&st$saba-datatable-multiple-data-blocks$*BL*%3Dfalse" target="_blank"><img class="best-brands-logo" src="https://na3t1.sabacloud.com/production/NA3T1SNB007/sabacr3013639809518732804/img/ego.png" alt="EGO" width="65" height="auto"></a>
+                                                            </li>
+                                                        </div>
+                                                        <div class="ul-dropdown-container">
+                                                            <li>
+                                                                <a class="no-collapsable" href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=common%2Fcategorydetail%2Fcateg000000000005061%2Fxxemptyxx%2Fxxemptyxx%2FALL%3Fst$search-result-custom-fields-filter$*MP*%3D*OPCRL**CLCRL*&st$search-result-facet-filters$*MP*%3D*OPCRL**CLCRL*&st$learningBrowse$*BL*%3Dfalse&st$showBackLinkOnBrowse$*BL*%3Dfalse&st$search-result-facet-condition-types$*MP*%3D*OPCRL*resource_type$*ST**EQ*kAnd,%20all_category_id$*ST**EQ*kOr,%20microlearning$*ST**EQ*kOr*CLCRL*&st$KC-searchType$*ST*%3DALL&st$fromCareerSite$*BL*%3Dfalse&st$saba-datatable-add-facets-values$*BL*%3Dtrue&st$start-date-adv-search-filter-state$*MP*%3D*OPCRL**CLCRL*&st$facet-resource-type-state$*ST*%3DALL&st$fromBrowseSearch$*BL*%3Dtrue&st$saba-datatable-page-number$*ST*%3D0&st$index-count-state$java.lang.Integer%3D8&st$categoryId$*ST*%3Dcateg000000000005061&st$fromEcommerce$*BL*%3Dfalse&st$isBrowseContext$*BL*%3Dtrue&st$gridViewState$*BL*%3Dtrue&st$dataListName$*ST*%3DCommonCategorySearchList&st$saba-datatable-block-number$*ST*%3D0&st$showBackLinkOnSearch$*BL*%3Dfalse&st$search-result-facet-condition-operator$*MP*%3D*OPCRL*all_category_id$*FO**EQ*kEqual,%20resource_type$*FO**EQ*kEqual,%20owner$*FO**EQ*kEqual,%20microlearning$*FO**EQ*kEqual,%20facet_tag_name$*FO**EQ*kEqual*CLCRL*&st$saba-datatable-multiple-data-blocks$*BL*%3Dfalse" target="_blank"><img class="best-brands-logo" src="https://na3t1.sabacloud.com/production/NA3T1SNB007/sabacr3013639809518732804/img/weber.png" alt="Weber" width="65" height="auto"></a>
+                                                            </li>
+                                                        </div>
+                                                        <div class="ul-dropdown-container">
+                                                            <li>
+                                                                <a class="no-collapsable" href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085818" target="_blank"><img class="best-brands-logo" src="https://na3t1.sabacloud.com/production/NA3T1SNB007/sabacr3013639809518732804/img/milwaukee.png" alt="Milwaukee" width="65" height="auto"></a>
+                                                            </li>
+                                                        </div>
+                                                        <div class="ul-dropdown-container">
+                                                            <li>
+                                                                <a class="no-collapsable" href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=common%2Fcategorydetail%2Fcateg000000000005059%2Fxxemptyxx%2Fxxemptyxx%2FALL%3Fst$search-result-custom-fields-filter$*MP*%3D*OPCRL**CLCRL*&st$search-result-facet-filters$*MP*%3D*OPCRL**CLCRL*&st$learningBrowse$*BL*%3Dfalse&st$showBackLinkOnBrowse$*BL*%3Dfalse&st$search-result-facet-condition-types$*MP*%3D*OPCRL*resource_type$*ST**EQ*kAnd,%20all_category_id$*ST**EQ*kOr,%20microlearning$*ST**EQ*kOr*CLCRL*&st$KC-searchType$*ST*%3DALL&st$fromCareerSite$*BL*%3Dfalse&st$saba-datatable-add-facets-values$*BL*%3Dtrue&st$start-date-adv-search-filter-state$*MP*%3D*OPCRL**CLCRL*&st$facet-resource-type-state$*ST*%3DALL&st$fromBrowseSearch$*BL*%3Dtrue&st$saba-datatable-page-number$*ST*%3D0&st$index-count-state$java.lang.Integer%3D7&st$categoryId$*ST*%3Dcateg000000000005059&st$fromEcommerce$*BL*%3Dfalse&st$isBrowseContext$*BL*%3Dtrue&st$gridViewState$*BL*%3Dtrue&st$dataListName$*ST*%3DCommonCategorySearchList&st$saba-datatable-block-number$*ST*%3D0&st$showBackLinkOnSearch$*BL*%3Dfalse&st$search-result-facet-condition-operator$*MP*%3D*OPCRL*all_category_id$*FO**EQ*kEqual,%20resource_type$*FO**EQ*kEqual,%20owner$*FO**EQ*kEqual,%20microlearning$*FO**EQ*kEqual,%20facet_tag_name$*FO**EQ*kEqual*CLCRL*&st$saba-datatable-multiple-data-blocks$*BL*%3Dfalse" target="_blank"><img class="best-brands-logo" src="https://na3t1.sabacloud.com/production/NA3T1SNB007/sabacr3013639809518732804/img/yeti.png" alt="Yeti" width="65" height="auto"></a>
+                                                            </li>
+                                                        </div>
+                                                        <div class="ul-dropdown-container">
+                                                            <li>
+                                                                <a class="no-collapsable" href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085819" target="_blank"><img class="best-brands-logo" src="https://na3t1.sabacloud.com/production/NA3T1SNB007/sabacr3013639809518732804/img/scottspng" alt="Scotts" width="65" height="auto"></a>
+                                                            </li>
+                                                        </div>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <li>
+                                        <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085830" class="anchors-assessment anchors-ondemand anchors-submenu-display" target="_blank">Business to Business</a>
+                                        </li>
+                                        <li>
+                                        <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085832" class="anchors-assessment anchors-ondemand anchors-submenu-display" target="_blank">Convention Trainings</a>
+                                        </li>
+                                        <li>
+                                        <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085833" class="anchors-assessment anchors-ondemand anchors-submenu-display" target="_blank">Higher Ground</a>
+                                        </li>
+                                    </div>
+
+                            
+
+                                <div class="ul-dropdown-container column-width">
+                                    <li>
+                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085834" class="anchors-assessment anchors-ondemand anchors-submenu-display" target="_blank">Labor Force Optimization</a>
+                                    </li>
+                                    <li>
+                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085809" class="anchors-assessment anchors-ondemand anchors-submenu-display" target="_blank">Leadership & Coaching</a>
+                                    </li>
+                                    <li>
+                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085835" class="anchors-assessment anchors-ondemand anchors-submenu-display" target="_blank">Logistics Revolution</a>
+                                    </li>
+                                    <li>
+                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000087017" class="anchors-assessment anchors-ondemand anchors-submenu-display" target="_blank">Mango Report</a>
+                                    </li>
+                                </div>
+
+                                <div class="ul-dropdown-container column-width">
+
+                                    <nav class="menu">
+                                    <ul>
+                                        <li class="sub-nav-transition-assessment pointer-events">
+                                        <a onclick="subMenuMobileApplicationClick()" class="arrow-right mobile-application"></a><a onclick="subMenuMobileApplicationClick()" class="sub-menu-click mobile-application" id="mobileapplications-colorchange" href="#">&nbsp;Mobile Applications</a>
+                                            <ul>
+                                            <li>
+                                                <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=common%2Fcategorydetail%2Fcateg000000000008066%3Fst$search-result-custom-fields-filter$*MP*%3D*OPCRL**CLCRL*&st$search-result-facet-filters$*MP*%3D*OPCRL**CLCRL*&st$learningBrowse$*BL*%3Dfalse&st$showBackLinkOnBrowse$*BL*%3Dfalse&st$search-result-facet-condition-types$*MP*%3D*OPCRL*resource_type$*ST**EQ*kAnd,%20all_category_id$*ST**EQ*kOr,%20microlearning$*ST**EQ*kOr*CLCRL*&st$KC-searchType$*ST*%3DALL&st$fromCareerSite$*BL*%3Dfalse&st$saba-datatable-add-facets-values$*BL*%3Dtrue&st$start-date-adv-search-filter-state$*MP*%3D*OPCRL**CLCRL*&st$facet-resource-type-state$*ST*%3DALL&st$fromBrowseSearch$*BL*%3Dtrue&st$saba-datatable-page-number$*ST*%3D0&st$index-count-state$java.lang.Integer%3D5&st$categoryId$*ST*%3Dcateg000000000008066&st$fromEcommerce$*BL*%3Dfalse&st$isBrowseContext$*BL*%3Dtrue&st$gridViewState$*BL*%3Dtrue&st$dataListName$*ST*%3DCommonCategorySearchList&st$saba-datatable-block-number$*ST*%3D0&st$showBackLinkOnSearch$*BL*%3Dfalse&st$search-result-facet-condition-operator$*MP*%3D*OPCRL*all_category_id$*FO**EQ*kEqual,%20resource_type$*FO**EQ*kEqual,%20owner$*FO**EQ*kEqual,%20microlearning$*FO**EQ*kEqual,%20facet_tag_name$*FO**EQ*kEqual*CLCRL*&st$saba-datatable-multiple-data-blocks$*BL*%3Dfalse" class="anchors-submenu-display no-collapsable" target="_blank">Ace Retailer Mobile App (ARMA)</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=common%2Fcategorydetail%2Fcateg000000000008067%3Fst$search-result-custom-fields-filter$*MP*%3D*OPCRL**CLCRL*&st$search-result-facet-filters$*MP*%3D*OPCRL**CLCRL*&st$learningBrowse$*BL*%3Dfalse&st$showBackLinkOnBrowse$*BL*%3Dfalse&st$search-result-facet-condition-types$*MP*%3D*OPCRL*resource_type$*ST**EQ*kAnd,%20all_category_id$*ST**EQ*kOr,%20microlearning$*ST**EQ*kOr*CLCRL*&st$KC-searchType$*ST*%3DALL&st$fromCareerSite$*BL*%3Dfalse&st$saba-datatable-add-facets-values$*BL*%3Dtrue&st$start-date-adv-search-filter-state$*MP*%3D*OPCRL**CLCRL*&st$facet-resource-type-state$*ST*%3DALL&st$fromBrowseSearch$*BL*%3Dtrue&st$saba-datatable-page-number$*ST*%3D0&st$index-count-state$java.lang.Integer%3D2&st$categoryId$*ST*%3Dcateg000000000008067&st$fromEcommerce$*BL*%3Dfalse&st$isBrowseContext$*BL*%3Dtrue&st$gridViewState$*BL*%3Dtrue&st$dataListName$*ST*%3DCommonCategorySearchList&st$saba-datatable-block-number$*ST*%3D0&st$showBackLinkOnSearch$*BL*%3Dfalse&st$search-result-facet-condition-operator$*MP*%3D*OPCRL*all_category_id$*FO**EQ*kEqual,%20resource_type$*FO**EQ*kEqual,%20owner$*FO**EQ*kEqual,%20microlearning$*FO**EQ*kEqual,%20facet_tag_name$*FO**EQ*kEqual*CLCRL*&st$saba-datatable-multiple-data-blocks$*BL*%3Dfalse" class="anchors-submenu-display no-collapsable" target="_blank">Consumer App</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=common%2Fcategorydetail%2Fcateg000000000008070%3Fst$search-result-custom-fields-filter$*MP*%3D*OPCRL**CLCRL*&st$search-result-facet-filters$*MP*%3D*OPCRL**CLCRL*&st$learningBrowse$*BL*%3Dfalse&st$showBackLinkOnBrowse$*BL*%3Dfalse&st$search-result-facet-condition-types$*MP*%3D*OPCRL*resource_type$*ST**EQ*kAnd,%20all_category_id$*ST**EQ*kOr,%20microlearning$*ST**EQ*kOr*CLCRL*&st$KC-searchType$*ST*%3DALL&st$fromCareerSite$*BL*%3Dfalse&st$saba-datatable-add-facets-values$*BL*%3Dtrue&st$start-date-adv-search-filter-state$*MP*%3D*OPCRL**CLCRL*&st$facet-resource-type-state$*ST*%3DALL&st$fromBrowseSearch$*BL*%3Dtrue&st$saba-datatable-page-number$*ST*%3D0&st$index-count-state$java.lang.Integer%3D3&st$categoryId$*ST*%3Dcateg000000000008070&st$fromEcommerce$*BL*%3Dfalse&st$isBrowseContext$*BL*%3Dtrue&st$gridViewState$*BL*%3Dtrue&st$dataListName$*ST*%3DCommonCategorySearchList&st$saba-datatable-block-number$*ST*%3D0&st$showBackLinkOnSearch$*BL*%3Dfalse&st$search-result-facet-condition-operator$*MP*%3D*OPCRL*all_category_id$*FO**EQ*kEqual,%20resource_type$*FO**EQ*kEqual,%20owner$*FO**EQ*kEqual,%20microlearning$*FO**EQ*kEqual,%20facet_tag_name$*FO**EQ*kEqual*CLCRL*&st$saba-datatable-multiple-data-blocks$*BL*%3Dfalse" class="anchors-submenu-display no-collapsable" target="_blank">Eagle Mobile App</a>
+                                            </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    </nav>
+
+                                    <li>
+                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085822" class="anchors-assessment anchors-ondemand anchors-submenu-display" target="_blank">On Demand Course List</a>
+                                    </li>
+                                    <li>
+                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085793" class="anchors-assessment anchors-ondemand anchors-submenu-display" target="_blank">Required Compliance Courses</a>
+                                    </li>
+
+                                    <nav class="menu">
+                                    <ul style="padding-right: 0;">
+                                        <li class="sub-nav-transition-assessment pointer-events">
+                                        <a onclick="subMenuStoreSystemsClick()" class="arrow-right store-systems-operations"></a><a onclick="subMenuStoreSystemsClick()" class="sub-menu-click store-systems-operations" id="systems-colorchange" href="#">&nbsp;Store Systems & Operations</a>
+                                    
+                                            <ul>
+                                            <div style="display: flex;"> 
+                                            <div class="ul-dropdown-container">
+                                                <li>
+                                                <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085823" class="anchors-submenu-display no-collapsable" target="_blank">Financial Management</a>
+                                                </li>
+                                                <li>
+                                                <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085824" class="anchors-submenu-display no-collapsable" target="_blank">Inventory Management</a>
+                                                </li>
+                                                <li>
+                                                <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085825" class="anchors-submenu-display no-collapsable" target="_blank">Loss Prevention</a>
+                                                </li>
+                                                <li>
+                                                <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085826" class="anchors-submenu-display no-collapsable" target="_blank">Marketing & Promotions</a>
+                                                </li>
+                                            </div>
+                                            
+                                            <div class="ul-dropdown-container">
+                                                <li>
+                                                <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085827" class="anchors-submenu-display no-collapsable" target="_blank">People Management</a>
+                                                </li>
+                                            
+                                                <li>
+                                                <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=common%2Fcategorydetail%2Fcateg000000000003067%3Fst$search-result-custom-fields-filter$*MP*%3D*OPCRL**CLCRL*&st$search-result-facet-filters$*MP*%3D*OPCRL**CLCRL*&st$learningBrowse$*BL*%3Dfalse&st$showBackLinkOnBrowse$*BL*%3Dfalse&st$search-result-facet-condition-types$*MP*%3D*OPCRL*resource_type$*ST**EQ*kAnd,%20all_category_id$*ST**EQ*kOr,%20microlearning$*ST**EQ*kOr*CLCRL*&st$KC-searchType$*ST*%3DALL&st$fromCareerSite$*BL*%3Dfalse&st$saba-datatable-add-facets-values$*BL*%3Dtrue&st$start-date-adv-search-filter-state$*MP*%3D*OPCRL**CLCRL*&st$facet-resource-type-state$*ST*%3DALL&st$fromBrowseSearch$*BL*%3Dtrue&st$saba-datatable-page-number$*ST*%3D0&st$index-count-state$java.lang.Integer%3D1&st$categoryId$*ST*%3Dcateg000000000003067&st$fromEcommerce$*BL*%3Dfalse&st$isBrowseContext$*BL*%3Dtrue&st$gridViewState$*BL*%3Dtrue&st$dataListName$*ST*%3DCommonCategorySearchList&st$saba-datatable-block-number$*ST*%3D0&st$showBackLinkOnSearch$*BL*%3Dfalse&st$search-result-facet-condition-operator$*MP*%3D*OPCRL*all_category_id$*FO**EQ*kEqual,%20resource_type$*FO**EQ*kEqual,%20owner$*FO**EQ*kEqual,%20microlearning$*FO**EQ*kEqual,%20facet_tag_name$*FO**EQ*kEqual*CLCRL*&st$saba-datatable-multiple-data-blocks$*BL*%3Dfalse" class="anchors-submenu-display no-collapsable" target="_blank">Store Environment</a>
+                                                </li>
+                                                <li>
+                                                <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085829" class="anchors-submenu-display no-collapsable" target="_blank">Store Systems</a>
+                                                </li>
+                                            </div>
+                                            </div>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    </nav>
+
+                                </div>
+                                
+                                <div class="ul-dropdown-container column-width">
+
+                                    <nav class="menu">
+                                    <ul style="padding-left: 0;">
+                                        <li class="sub-nav-transition-assessment pointer-events">
+                                        
+                                        <a onclick="subMenuTrainingClick()" class="arrow-right training-by-department"></a><a onclick="subMenuTrainingClick()" class="sub-menu-click training-by-department" id="training2-colorchange" href="#">&nbsp;Training by Department</a>
+                                    
+                                            <ul style="width: 232px;">
+                                            <div style="margin-left: 0;" class="ul-dropdown">
+
+                                                <div class="ul-dropdown-container">
+                                                <li>
+                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085794" class="anchors-submenu-display no-collapsable" target="_blank">Badge Program</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085795" class="anchors-submenu-display no-collapsable" target="_blank">BBQ & Outdoor Living</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085796" class="anchors-submenu-display no-collapsable" target="_blank">Electrical</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085797" class="anchors-submenu-display no-collapsable" target="_blank">Hardware</a>
+                                                </li>
+                                                </div>
+                    
+                                                <div class="ul-dropdown-container">
+                                                <li>
+                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085798" class="anchors-submenu-display no-collapsable" target="_blank">Housewares & Impulse</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085800" class="anchors-submenu-display no-collapsable" target="_blank">Lawn & Garden & Outdoor Power Equipment</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085801" class="anchors-submenu-display no-collapsable" target="_blank">Lumber & Building Materials</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085802" class="anchors-submenu-display no-collapsable" target="_blank">Paint & Cleaning</a>
+                                                </li>
+                                                </div>
+                    
+                                                <div class="ul-dropdown-container">
+                                                <li>
+                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085803" class="anchors-submenu-display no-collapsable" target="_blank">Plumbing</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085804" class="anchors-submenu-display no-collapsable" target="_blank">Services & Rental</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085806" class="anchors-submenu-display no-collapsable" target="_blank">Tools & Automotive</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085808" class="anchors-submenu-display no-collapsable" target="_blank">Trim, Birding and Pet Supplies</a>
+                                                </li>
+                                                </div>
+                    
+                                                <!-- <div class="ul-dropdown-container">
+                                                <li>
+                                                    <a href="#" class="anchors-submenu-display live-product" target="_blank">Live Product Knowledge Classes</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000088120" class="anchors-submenu-display no-collapsable" target="_blank">Ace BBQ Expert Series</a>
+                                                </li>
+                                                </div> -->
+                    
+                                            </div>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    </nav>
+
+                                    <li style="position: relative;right: 18px;">
+                                    <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085817" class="anchors-assessment anchors-ondemand anchors-submenu-display" target="_blank">Win the Month</a>
+                                    </li>
+                                
+                                </div>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- End On Demand Courses -->
+            
+                <!-- Instructor-Led Training -->
+                <div class="col">
+
+                    <!-- Chevron btn -->
+                    <div class="chevron-container chevron-transition chevron" id="instructor-chevron-btn">
+                        <div style="position: relative;left: -8.5rem;" class="chevron-container__sub">
+                        <button class="chevron-back-btn chevron-menupage-instructor"><i class="far fa-chevron-left"></i>&nbsp;&nbsp;&nbsp;Back</button>
+                        <p class="chevron-container__copy">Instructor-Led Classes</p>
+                        </div> 
+                    </div>
+                    <!-- End Chevron btn -->
+
+                    <div class="card-container instructor-container">
+                        <div class="card-sub-container instructor">
+                            <div class="card mx-auto">
+                                <svg class="card-img-top mx-auto mt-3"  xmlns="http://www.w3.org/2000/svg" width="42.671" height="42.671" viewBox="0 0 47.671 47.671"><path d="M9.356,0a.953.953,0,0,0-.775.953V2.86a.954.954,0,1,0,1.907,0V1.907h33.37V23.836h-3.9L41,21.929l-1.043-1.907H31.463v3.814H20.886a.954.954,0,1,0,.089,1.907H45.765V26.7H20.975a.954.954,0,1,0,0,1.907H46.718a.955.955,0,0,0,.953-.953v-2.86a.955.955,0,0,0-.953-.953h-.953V.953A.955.955,0,0,0,44.811,0H9.356Zm2.086,4.767a5.721,5.721,0,1,0,5.721,5.721A5.736,5.736,0,0,0,11.441,4.767Zm0,11.441h-2.2a4.809,4.809,0,0,0-2.741.745,4.311,4.311,0,0,0-1.728,3.724V30.927a4.712,4.712,0,0,0-1.162,7.955A6.721,6.721,0,0,0,0,44.811v1.907a.955.955,0,0,0,.953.953H46.718a.955.955,0,0,0,.953-.953V44.811a6.721,6.721,0,0,0-3.605-5.929,4.767,4.767,0,1,0-6.138,0,6.853,6.853,0,0,0-2.652,2.5,6.749,6.749,0,0,0-2.652-2.5,4.767,4.767,0,1,0-6.138,0,6.853,6.853,0,0,0-2.652,2.5,6.775,6.775,0,0,0-2.652-2.5,4.745,4.745,0,0,0,1.7-3.605A4.8,4.8,0,0,0,19.069,30.6v-8.67l4.082-1.46.03-.03c.007,0,.022,0,.03,0a3.754,3.754,0,0,0,1.937-1.281h.03l4.767-6.167v-.03a2.724,2.724,0,0,0-.477-3.814,2.814,2.814,0,0,0-2-.536,2.585,2.585,0,0,0-1.817,1.013L21.571,14.9l-6.316,1.311Zm0-9.534a3.814,3.814,0,1,1-3.814,3.814A3.8,3.8,0,0,1,11.441,6.674Zm16.238,3.844a.786.786,0,0,1,.745,1.281c-.007.007.007.022,0,.03L23.657,18v.03a2.481,2.481,0,0,1-1.043.6.444.444,0,0,0-.06.03l-4.767,1.7a.954.954,0,0,0-.626.924V30.6a4.8,4.8,0,0,0-3.814,4.678,4.745,4.745,0,0,0,1.7,3.605,6.853,6.853,0,0,0-2.652,2.5,6.749,6.749,0,0,0-2.652-2.5A4.738,4.738,0,0,0,6.674,30.51V20.677c0-1.341.387-1.825.864-2.145a3.228,3.228,0,0,1,1.7-.417h6.019a.972.972,0,0,0,.209-.03l6.853-1.43a.978.978,0,0,0,.566-.328l4.29-5.542A.733.733,0,0,1,27.679,10.518ZM6.674,32.417a2.808,2.808,0,1,1-.864.119c.056-.019.123-.015.179-.03a1.114,1.114,0,0,0,.119-.03A2.834,2.834,0,0,1,6.674,32.417Zm22.882,0a2.86,2.86,0,1,1-2.86,2.86A2.847,2.847,0,0,1,29.556,32.417Zm11.441,0a2.86,2.86,0,1,1-2.86,2.86A2.847,2.847,0,0,1,41,32.417Zm-23.121.03h.03a.969.969,0,0,0,.387,0h.03a2.845,2.845,0,1,1-.447,0Zm-11.2,7.6a4.776,4.776,0,0,1,4.767,4.767v.953H1.907v-.953A4.776,4.776,0,0,1,6.674,40.044Zm11.441,0a4.776,4.776,0,0,1,4.767,4.767v.953H13.348v-.953A4.776,4.776,0,0,1,18.115,40.044Zm11.441,0a4.776,4.776,0,0,1,4.767,4.767v.953H24.789v-.953A4.776,4.776,0,0,1,29.556,40.044Zm11.441,0a4.776,4.776,0,0,1,4.767,4.767v.953H36.23v-.953A4.776,4.776,0,0,1,41,40.044Z" fill="#d40029"/></svg>
+                                <div class="card-body card-body-margin">
+                                    <h5 class="card-title">Instructor-Led Classes</h5>
+                                </div>
+                            </div>
+                            <nav class="instructor-container__nav">
+                                <ul class="ul-dropdown">
+                                    <div class="ul-dropdown-container">
+                                        <li>
+                                            <a href="#" class="anchors-submenu-display" target="_blank">Associate Training</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085736" class="anchors-submenu-display" target="_blank">Department Knowledge Basics</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085737" class="anchors-submenu-display" target="_blank">Helpful Customer Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085744" class="anchors-submenu-display" target="_blank">Plumbing and Electrical</a>
+                                        </li>
+                                        </div>
+
+                                        <div class="ul-dropdown-container">
+                                        <li>
+                                            <a href="#" class="anchors-submenu-display" target="_blank">Leadership Development</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085733" class="anchors-submenu-display" target="_blank">Building Great Teams</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085735" class="anchors-submenu-display" target="_blank">Essential Management Skills</a>
+                                        </li>
+                                    </div>
+                                    <div class="ul-dropdown-container">
+                                        <li>
+                                            <a href="#" class="anchors-submenu-display" target="_blank">Operations Management</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000090687" class="anchors-submenu-display" target="_blank">Business to Business</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000090685" class="anchors-submenu-display" target="_blank">Higher Ground</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000090684" class="anchors-submenu-display" target="_blank">Inventory Management</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000090683" class="anchors-submenu-display" target="_blank">Labor Force Optimization</a>
+                                        </li>
+                                    </div>
+                                    <div class="ul-dropdown-container">
+                                        <li>
+                                            <a href="#" class="anchors-submenu-display" target="_blank">Owner Leadership Series</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085740" class="anchors-submenu-display" target="_blank">Leading Your Business</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="anchors-submenu-display" target="_blank">&nbsp;</a>
+                                        </li>
+                                    </div>
+                                    <div class="ul-dropdown-container">
+                                        <li>
+                                            <a href="#" class="anchors-submenu-display" target="_blank">Informational Webinars</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000085738" class="anchors-submenu-display" target="_blank">Product Knowledge</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/workspace/detail/pgcnt000000000088133" class="anchors-submenu-display" target="_blank">Ace Learning Place Training</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instructor-Led Training  -->
+
+                <!-- Training by Department -->
+                <div class="col">
+                    
+                    <!-- Chevron btn -->
+                    <div class="chevron-container chevron-transition chevron" id="trainingdepartment-chevron-btn">
+                        <div class="chevron-container__sub">
+                            <button class="chevron-back-btn chevron-menupage-training"><i class="far fa-chevron-left"></i>&nbsp;&nbsp;&nbsp;Back</button>
+                        <p class="chevron-container__copy">Training by Department</p>
+                        </div> 
+                    </div>
+                    <!-- End Chevron btn -->
+
+                    <div class="card-container trainingdepartment-container">
+                        <div class="card-sub-container trainingdepartment">
+                            <div class="card mx-auto card-training">
+                                <img class="learningresources-container__icon" src="https://na9p1.sabacloud.com/production/NA9P1PRD003/sabacr72229736905366323/ALP%20Images%20V2/badge-program.png" alt="Badge Program" />
+                                <div class="card-body card-body-margin">
+                                    <h5 class="card-title">Training by Department</h5>
+                                </div>
+                            </div>
+                            <nav class="training-container__nav">
+                                <ul class="ul-dropdown">
+                                    <div class="ul-dropdown-container">
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085794" class="anchors-submenu-display" target="_blank">Badge Program</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085795" class="anchors-submenu-display" target="_blank">BBQ & Outdoor Living</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085796" class="anchors-submenu-display" target="_blank">Electrical</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085797" class="anchors-submenu-display" target="_blank">Hardware</a>
+                                        </li>
+                                    </div>
+                                    <div class="ul-dropdown-container">
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085798" class="anchors-submenu-display" target="_blank">Housewares & Impulse</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085800" class="anchors-submenu-display" target="_blank">Lawn & Garden & Outdoor Power Equipment</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085801" class="anchors-submenu-display" target="_blank">Lumber & Building Materials</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085802" class="anchors-submenu-display" target="_blank">Paint & Cleaning</a>
+                                        </li>
+                                    </div>
+                                    <div class="ul-dropdown-container">
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085803" class="anchors-submenu-display" target="_blank">Plumbing</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085804" class="anchors-submenu-display" target="_blank">Services & Rental</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085806" class="anchors-submenu-display" target="_blank">Tools & Automotive</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/shared;spf-url=pages%2Fpagelistview%2Fpgcnt000000000085808" class="anchors-submenu-display" target="_blank">Trim, Birding and Pet Supplies</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Trainig by Department -->
+
+                <!-- My Reports -->
+                <div class="col">
+
+                    <!-- Chevron btn -->
+                    <div class="chevron-container chevron-transition chevron" id="myreports-chevron-btn">
+                        <div class="chevron-container__sub">
+                        <button class="chevron-back-btn chevron-menupage-reports"><i class="far fa-chevron-left"></i>&nbsp;&nbsp;&nbsp;Back</button>
+                        <p class="chevron-container__copy">My Reports</p>
+                        </div> 
+                    </div>
+                    <!-- End Chevron btn -->
+
+                    <div class="card-container myreports-container">
+                        <div class="card-sub-container myreports">
+                            <div class="card mx-auto">
+                                <svg class="card-img-top mx-auto mt-3" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 48 48"><path d="M45,2a2,2,0,0,0-2,2,1.953,1.953,0,0,0,.188.813L35.188,16c-.062,0-.125,0-.187,0a2.011,2.011,0,0,0-1.094.313L27,12.875A2,2,0,0,0,23,13a2.066,2.066,0,0,0,.031.313l-7.312,5.813a2.015,2.015,0,0,0-2.687,1.563l-6.812,2.75A1.975,1.975,0,0,0,5,23a2,2,0,1,0,1.969,2.281l6.813-2.719A1.975,1.975,0,0,0,15,23a2,2,0,0,0,2-2,2.066,2.066,0,0,0-.031-.312l7.313-5.812A1.987,1.987,0,0,0,25,15a2.011,2.011,0,0,0,1.094-.312L33,18.125A2,2,0,0,0,37,18a1.953,1.953,0,0,0-.187-.812L44.813,6c.063,0,.125,0,.188,0a2,2,0,0,0,0-4ZM41,15V50h8V15Zm2,2h4V48H43ZM21,24V50h8V24Zm2,2h4V48H23Zm8,3V50h8V29Zm2,2h4V48H33ZM11,32V50h8V32Zm2,2h4V48H13ZM1,36V50H9V36Zm2,2H7V48H3Z" transform="translate(-1 -2)" fill="#d40029"/></svg>
+                                <div class="card-body card-body-margin">
+                                    <h5 class="card-title">My Reports</h5>
+                                </div>
+                            </div>
+                        
+                            <nav class="myreports__nav">
+                                <ul class="ul-dropdown">
+                                    <div class="ul-dropdown-container myreports-container__access anchors">
+                                        <li class="learningresources-container__list">
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/admin/analytics-app" class="anchors learningresources-container__item" target="_blank"><button type="button" class="learningresources-container__button analytics-btn">Analytics Admin</button></a>
+                                        </li>
+                                    </div>
+                                    <div class="ul-dropdown-container">
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web/NA9P1PRD003/goto/analytics/dshbd000000012ed7d670172e631578703c41" class="anchors-submenu-display" target="_blank">Badge Program Supervisor Dashboard</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web/NA9P1PRD003/goto/analytics/rptdf00000055a378c4016fa5d960c80035bf" class="anchors-submenu-display" target="_blank">Course Completions Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/admin/analytics-app/report/execute/rptdf00000007cd91d9b016d0497fac402c54" class="anchors-submenu-display" target="_blank">Employee User Info (by store)</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web/NA9P1PRD003/goto/analytics/rptdf0000000143db339016eab2302f9053bd" class="anchors-submenu-display" target="_blank">Learning Plan by Role Progress Report</a>
+                                        </li>
+                                    </div>
+                                    <div class="ul-dropdown-container">
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web/NA9P1PRD003/goto/analytics/rptdf0000002e3f7ab7016fc811212d007a0f" class="anchors-submenu-display" target="_blank">My Team Progress Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web/NA9P1PRD003/goto/analytics/rptdf000000191e1593016d049b75950021b3" class="anchors-submenu-display" target="_blank">Training Hours Report (By store #)</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acehardware.sabacloud.com/Saba/Web/NA9P1PRD003/goto/analytics/rptdf0000007cd91d9b016d0497fac4006174" class="anchors-submenu-display" target="_blank">Training Hours Report (Multi-store)</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- My Reports  -->
+                
+                <!-- Training Coordinator Shortcuts -->
+                <div class="col">
+                    <div class="card-container trainingshortcuts-container">
+                        <div class="card-sub-container trainingshortcuts">
+                            <a href="https://acehardware.sabacloud.com/Saba/Web_spf/NA9P1PRD003/app/me/microapp/appc549d30658934a9d99e06e6cc7bb4c01" target="_blank">
+                                <div class="card mx-auto">
+                                    <svg class="mt-3" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    width="37px" height="29.038px" viewBox="0 0 42 34.038" enable-background="new 0 0 42 34.038" xml:space="preserve">
+                                    <path fill="#ffffff" d="M24.875,0.007c-0.504,0.062-0.879,0.492-0.875,1v7.062c-11.512,0.352-17.719,6.445-20.781,12.5
+                                        C0.114,26.706,0.004,32.69,0,32.882v0.062v0.062c-0.016,0.551,0.418,1.016,0.969,1.031S1.985,33.62,2,33.069v-0.062
+                                        c0.008-0.094,0.23-3.121,3.094-6.344C7.907,23.503,13.395,20.315,24,20.1v6.906c0,0.383,0.219,0.734,0.566,0.902
+                                        s0.758,0.121,1.059-0.121l16-13C41.864,14.597,42,14.311,42,14.007s-0.137-0.59-0.375-0.781l-16-13
+                                        C25.414,0.054,25.145-0.025,24.875,0.007z M26,3.1l13.406,10.906L26,24.913v-5.906c0-0.551-0.449-1-1-1
+                                        c-11.754,0-18.09,3.613-21.406,7.344c-0.125,0.141-0.195,0.266-0.312,0.406C3.704,24.382,4.258,22.913,5,21.444
+                                        c2.918-5.766,8.488-11.438,20-11.438c0.551,0,1-0.449,1-1V3.1z"/>
+                                    </svg>
+                                    <div class="card-body card-body-margin">
+                                        <h5 class="card-title">Training <br /> Coordinator <br />Shortcuts</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Training Coordinator Shortcuts -->
+            </div>
+        </div>
+        
+    <script src="assets/js/scripts.js"></script>
+    <!-- Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    
+    </body>
+</html>
